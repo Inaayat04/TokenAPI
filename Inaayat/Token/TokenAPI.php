@@ -10,6 +10,7 @@ class TokenAPI extends  PluginBase {
 
     /** @var Main $instance */
     private static $instance;
+
     private $db;
 
     public function onLoad(): void{
