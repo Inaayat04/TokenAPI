@@ -1,17 +1,10 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Inaayat04/TokenAPI
 build-by-default: true
-
 branches:
-
 - master
-
 projects:
-
   TokenAPI:
-
     path: ""
-
     lint:
-
       phpstan: false
 ...
