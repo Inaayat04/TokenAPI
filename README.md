@@ -34,4 +34,4 @@ $token->reduceToken($player, "50");
 $token->setToken($player, "250");
 ```
 
-#TokenAPI maked in love by Inaayat.
+# TokenAPI maked in love by Inaayat.
