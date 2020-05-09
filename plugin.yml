@@ -1,5 +1,5 @@
 name: TokenAPI
 version: 1.0.0
-main: Inaayat\Token\Main
+main: Inaayat\Token\TokenAPI
 api: [3.0.0]
 author: Inaayat
