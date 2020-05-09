@@ -7,7 +7,7 @@ branches:
 
 projects:
 
-  ScoreTag:
+  TokenAPI:
 
     path: ""
 
