@@ -6,7 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 use pocketmine\utils\Config;
 
-class Main extends  PluginBase {
+class TokenAPI extends  PluginBase {
 
     /** @var Main $instance */
     private static $instance;
