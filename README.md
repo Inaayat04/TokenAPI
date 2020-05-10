@@ -6,7 +6,7 @@
 
 ```php
  <?php
- use `Inaayat\Token\TokenAPI;
+ use Inaayat\Token\TokenAPI;
  ```
  
 ## You can create an instance by doing:
@@ -34,4 +34,4 @@ $token->reduceToken($player, "50");
 $token->setToken($player, "250");
 ```
 
-# TokenAPI maked in love by Inaayat.
+# This API was made with 💓 by Inaayat.
