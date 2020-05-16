@@ -28,9 +28,8 @@ class TokenAPI extends  PluginBase {
         if ($player instanceof Player) {
             $player = $player->getName();
         }
-        $player = strtolower($player);
-        $this->db->get($player);
-        return $this->db->get($player);
+        $this->db->get($player->getName());
+        return $this->db->get($player->getName());
     }
 
     public function reduceMoney($player, $token){
@@ -40,8 +39,7 @@ class TokenAPI extends  PluginBase {
         if ($this->myToken($player) - $token < 0) {
             return true;
         }
-        $player = strtolower($player);
-        $this->db->set($player, (int)$this->db->get($player) - $token);
+        $this->db->set($player->getName(), (int)$this->db->get($player) - $token);
         $this->db->save();
         return true;
     }
@@ -53,8 +51,7 @@ class TokenAPI extends  PluginBase {
         if ($this->myToken($player) + $token < 0) {
             return true;
         }
-        $player = strtolower($player);
-        $this->db->set($player, (int)$this->db->get($player) + $token);
+        $this->db->set($player->getName(), (int)$this->db->get($player) + $token);
         $this->db->save();
         return true;
     }
@@ -64,9 +61,12 @@ class TokenAPI extends  PluginBase {
         if ($player instanceof Player) {
             $player->getName();
         }
-        $player = strtolower($player);
-        $this->db->set($player, (int)$token);
+        $this->db->set($player->getName(), (int)$token);
         $this->db->save();
         return true;
     }
 }
+
+ public function onDisable(){
+      $this->db->save();
+ }
