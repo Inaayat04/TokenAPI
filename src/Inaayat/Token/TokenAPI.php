@@ -69,4 +69,5 @@ class TokenAPI extends  PluginBase {
 
  public function onDisable(){
       $this->db->save();
+      $this->getLogger()->info("Succesfully saved DB".);
  }
